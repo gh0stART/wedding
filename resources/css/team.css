@@ -1,0 +1,39 @@
+
+/* Main Body */
+#first-div {
+    background-image: url("../images/banners/NikoAllisonEng-147.jpg");
+}
+
+#second-div {
+    background-image: url("../images/banners/NikoAllisonEng-115.jpg");
+}
+
+.text {
+    margin: 2rem 5%;
+}
+
+.text-box {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box img {
+    width: 25%;
+    border-radius: 2rem;
+}
+
+.text-box p{
+    width: 70%;
+    text-align: left;
+}
+
+.name {
+    font-weight: 700;
+    color: rgba(196, 104, 48, 1);
+}
+
+.title {
+    font-style: italic;
+}

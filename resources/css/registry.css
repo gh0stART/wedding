@@ -1,0 +1,21 @@
+/* Main Body */
+#first-div {
+    background-image: url("../images/banners/NikoAllisonEng-225.jpg");
+
+}
+
+.text {
+    margin: 2rem 10%;
+}
+
+#registry-box {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#registry-box img {
+    max-width: 300px;
+}

@@ -1,0 +1,27 @@
+h3 {
+    color: rgba(196, 104, 48, 1);
+}
+
+/* Main Body */
+#first-div {
+    background-image: url("../images/banners/NikoAllisonEng-149touchedup.jpg");
+
+}
+
+#second-div {
+    background-image: url("../images/banners/NikoAllisonEng-170touchedup.jpg");
+ 
+}
+
+.text {
+    margin: 2rem 5%;
+}
+
+#ceremony {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box {
+    margin: 0 1%;
+}
