@@ -7,3 +7,7 @@
 .text {
     margin: 2rem 10%;
 }
+
+#rsvp-submit {
+    display: none;
+}

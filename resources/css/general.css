@@ -92,7 +92,7 @@ header {
 nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -124,8 +124,9 @@ nav a:hover {
 
 #left-nav,
 #right-nav {
+    width: 25%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #header-img {
@@ -133,20 +134,30 @@ nav a:hover {
     flex-shrink: 3;
 }
 
-#countdown {
-    font-family: 'Pacifico';
-    font-weight: 400;
-    font-size: 2rem;
+#date {
+    font-family: 'Alex Brush';
+    font-size: 2.5rem; 
     letter-spacing: 0.1rem;
+}
+
+.brush-num {
+    font-size: 2rem;
+}
+
+#countdown {
+    font-size: 1.25rem;
+    letter-spacing: 0.5rem;
+}
+
+h1 {
     color: rgba(037, 058, 073, 1);
+    line-height: 1.5rem;
 }
 
 /* Main Body */
 main section {
     margin:1rem 0;
 }
-
-
 
 .text h2 {
     font-family: 'Pacifico';
@@ -170,7 +181,6 @@ main section {
 .img-divider {
     width: 100%;
     height: 15rem;
-    background-color: rgba(196, 104, 48, 1);
 }
 
 #first-div {
@@ -219,6 +229,10 @@ footer {
     body {
         width: 95%;
         min-width: 800px;
+    }
+
+    #nav-left, #nav-right {
+        width: 35%;
     }
 
     #header-img {

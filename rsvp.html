@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Dahlheimers | Event</title>
+    <title>The Dahlheimers | RSVP</title>
     <link rel="stylesheet" href="./resources/css/general.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/rsvp.css" type="text/css">
 </head>
@@ -26,7 +26,8 @@
                 </ul>
             </nav>
 
-            <h1 id="countdown">10-21-21</h1>
+            <h1 id="date">October <span class="brush-num">21, 2021</span></h1>
+            <h1 id="countdown"></h1>
         </header>
 
         <main>
@@ -34,48 +35,56 @@
             <section id="intro" class="text">
                 <h2>RSVP</h2>
                 <div class="text-box">
-                    <form action="./rsvp-submit.html" action="POST">
-                        <section id="name">
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                        onload="if(submitted) {window.location='thedahlheimers.com/rsvp-submit.html';}"></iframe> 
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQctjdWkFu9YnNQ2g3qJ4nkWUePwVyrkR0zO1dLU3Tz_Oocg/formResponse" target="hidden_iframe" action="POST" id="rsvp-form">
+                        <section>
                             <label for="name">Name:</label><br>
-                            <input type="text" name="name" id="name" placeholder="First Last">
+                            <input type="text" name="entry.1292832963" id="name" placeholder="First Last" required>
                         </section>
 
-                        <section id="attending">
+                        <section>
                             <span>Will you be attending?</span><br>
                             <label for="yes">Yes</label>
-                            <input type="radio" name="attending" id="attending-yes" value="yes">
+                            <input type="radio" name="entry.420027344" id="attending-yes" value="yes" required>
                             <label for="no">No</label>
-                            <input type="radio" name="attending" id="attending-no" value="no">
+                            <input type="radio" name="entry.420027344" id="attending-no" value="no" required>
                         </section>
 
-                        <section id="party-num">
+                        <section>
                             <label for="party-number">How many people in your party (including children)?</label><br>
-                            <input type="number" name="party-number" id="party-number" placeholder="1"><br>
+                            <input type="number" name="entry.1246041859" id="party-number" placeholder="1" required><br>
                         </section>
-                        <section id="party-text">
+
+                        <section>
                             <label for="party-list">Please list (including children):</label><br>
-                            <textarea name="party-list" id="party-list" cols="30" rows="5" placeholder="First Last, First Last, First Last"></textarea>
+                            <textarea name="entry.2096589025" id="party-list" cols="30" rows="5" placeholder="First Last, First Last, First Last" required></textarea>
                         </section>
 
-                        <section id="restrictions">
+                        <section>
                             <label for="diet-restrictions">Dietary Restrictions?</label><br>
-                            <textarea name="diet-restrictions" id="diet-restrictions" cols="30" rows="5" placeholder="ie; allergies, vegetarian, vegan..."></textarea>
+                            <textarea name="entry.2016472176" id="diet-restrictions" cols="30" rows="5" placeholder="ie; allergies, vegetarian, vegan..."></textarea>
                         </section>
 
-                        <section id="submit">
-                            <input type="submit" value="Submit!">
+                        <section>
+                            <button type="submit" id="submit">Submit!</button>
                         </section>
 
                     </form>
+
+                    <section id="rsvp-submit">
+                        <p>Thank you for submitting your RSVP!</p>
+                    </section>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p id="hashtag">&num; wedding hashtag</p>
+            <p id="hashtag">&num;AintSheADahlheimer</p>
             <p id="credit">Site and graphics by <a href="https://gh0start.com">Allison Harmon</a> || Photos by <a href="http://gomoxiestudio.com">Moxie Studio Photography</a></p>
         </footer>
     </div>
 </body>
 <script src="./resources/javascript/countdown.js"></script>
+<script src="./resources/javascript/submit-form.js"></script>
 </html>

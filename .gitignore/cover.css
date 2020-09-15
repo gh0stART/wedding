@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(037, 058, 073, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  
+nav {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+nav li {
+    color: rgba(177, 182, 184, 1);
+    font-family: 'Arial Narrow', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+nav a {
+    color: rgba(177, 182, 184, 1);
+    font-family: 'Arial Narrow', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /*background-color: rgba(177, 182, 184, 0.25);*/
+    color:rgba(196, 104, 48, 1);
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: rgba(037, 058, 073, 1);
+    color: rgba(177, 182, 184, 1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+footer p {
+    font-family: 'Arial Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+  }
+
+main {
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron {
+    background-image: url("../images/unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.jumbotron img {
+    position: relative;
+    top: 80px;
+    height: 800px;
+}
+
+.container {
+    position: relative;
+    top: -20px;
+}
+
+#countdown {
+    color: rgba(037, 058, 073, 1);
+    font-size: 40px;
+    font-family: 'Arial Narrow', sans-serif;
+    padding: 20px 0px;
+}
+
+.enter {
+    background-color: rgba(177, 182, 184, 1);
+    border: 3px solid rgba(037, 058, 073, 1);
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+.enter a {
+    color: rgba(196, 104, 48, 1);
+    font-family: 'Arial Narrow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}

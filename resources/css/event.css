@@ -23,5 +23,12 @@ h3 {
 }
 
 .text-box {
-    margin: 0 1%;
+    margin: 1%;
+    padding: 1.5rem 0.5rem;
+}
+
+@media only screen and (orientation: portrait) {
+    #ceremony {
+        flex-direction: column;
+    }
 }

@@ -1,22 +1,4 @@
 
-
-#cover {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#cover img{
-    width: 100vmin;
-}
-
-#main {
-    display: none;
-}
-
-
 /* Main Body */
 #first-div {
     background-image: url("../images/banners/NikoAllisonEng-127.jpg");
