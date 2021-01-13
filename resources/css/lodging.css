@@ -7,3 +7,40 @@
 .text {
     margin: 2rem 10%;
 }
+
+#photos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+#photos img {
+    width: 30%;
+}
+
+a {
+    color: rgba(196, 104, 48, 1);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+button {
+    color: rgba(213, 211, 210, 1);
+    background-color: rgba(196, 104, 48, 1);
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: rgba(196, 104, 48, 0.5);
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(196, 104, 48, 0.5);
+}

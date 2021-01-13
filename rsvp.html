@@ -38,28 +38,34 @@
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
                         onload="if(submitted) {window.location='thedahlheimers.com/rsvp-submit.html';}"></iframe> 
                     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQctjdWkFu9YnNQ2g3qJ4nkWUePwVyrkR0zO1dLU3Tz_Oocg/formResponse" target="hidden_iframe" action="POST" id="rsvp-form">
-                        <section>
-                            <label for="name">Name:</label><br>
-                            <input type="text" name="entry.1292832963" id="name" placeholder="First Last" required>
-                        </section>
+                        <div class="line">
+                            <section class="first">
+                                <label for="name">Your Name:</label><br>
+                                <input type="text" name="entry.1292832963" id="name" placeholder="First Last" required>
+                            </section>
 
-                        <section>
-                            <span>Will you be attending?</span><br>
-                            <label for="yes">Yes</label>
-                            <input type="radio" name="entry.420027344" id="attending-yes" value="yes" required>
-                            <label for="no">No</label>
-                            <input type="radio" name="entry.420027344" id="attending-no" value="no" required>
-                        </section>
+                            <section class="second">
+                                <span>Will you be attending?</span><br>
+                                <select name="entry.420027344" id="attending" required>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </section>
+                        </div>
+                        
+                        
+                        <div id="if-attending" class="line">
+                            <section class="first">
+                                <label for="party-number"># Attending:</label><br>
+                                <input type="number" name="entry.1246041859" id="party-number" placeholder="1" required><br>
+                            </section>
 
-                        <section>
-                            <label for="party-number">How many people in your party (including children)?</label><br>
-                            <input type="number" name="entry.1246041859" id="party-number" placeholder="1" required><br>
-                        </section>
-
-                        <section>
-                            <label for="party-list">Please list (including children):</label><br>
-                            <textarea name="entry.2096589025" id="party-list" cols="30" rows="5" placeholder="First Last, First Last, First Last" required></textarea>
-                        </section>
+                            <section class="second">
+                                <label for="party-list">Their Names:</label><br>
+                                <textarea name="entry.2096589025" id="party-list" cols="30" rows="3" placeholder="First Last, First Last, First Last" required></textarea>
+                            </section>
+                        </div>
+                      
 
                         <section>
                             <label for="diet-restrictions">Dietary Restrictions?</label><br>

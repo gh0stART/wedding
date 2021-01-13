@@ -18,3 +18,9 @@
 .text {
     margin: 2rem 15%;
 }
+
+@media only screen and (orientation: portrait) {
+    .text-box {
+        width: 100%;
+    }
+}

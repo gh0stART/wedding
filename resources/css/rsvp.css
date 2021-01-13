@@ -11,3 +11,66 @@
 #rsvp-submit {
     display: none;
 }
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form section {
+    width: 100%;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line section {
+    width: 50%;
+}
+
+.first {
+    padding-right: 1rem;
+}
+
+.second {
+    padding-left: 1rem;
+}
+
+input, select, textarea, button {
+    width: 100%;
+}
+
+button {
+    color: rgba(213, 211, 210, 1);
+    background-color: rgba(196, 104, 48, 1);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(196, 104, 48, 0.5);
+}
+
+@media only screen and (orientation: portrait) {
+    .line {
+        flex-direction: column;
+    }
+
+    .line section {
+        width: 100%;
+    }
+
+    .first, .second {
+        padding: 0;
+    }
+}

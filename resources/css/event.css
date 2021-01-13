@@ -17,9 +17,26 @@ h3 {
     margin: 2rem 5%;
 }
 
-#ceremony {
+#ceremony, #reception {
     display: flex;
     justify-content: space-between;
+}
+
+.text-box {
+    width: 30%;
+}
+
+.text-box p {
+    padding-top: 1rem;
+}
+
+iframe {
+    height: 300px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
 }
 
 .text-box {
@@ -28,7 +45,13 @@ h3 {
 }
 
 @media only screen and (orientation: portrait) {
-    #ceremony {
+
+    #ceremony, #reception {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .text-box {
+        width: 80%;
     }
 }
