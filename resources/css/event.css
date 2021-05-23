@@ -13,6 +13,11 @@ h3 {
  
 }
 
+#third-div {
+    background-image: url("../images/banners/NikoAllisonEng-155.jpg");
+ 
+}
+
 .text {
     margin: 2rem 5%;
 }
