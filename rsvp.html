@@ -4,6 +4,7 @@
     <title>The Dahlheimers | RSVP</title>
     <link rel="stylesheet" href="./resources/css/general.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/rsvp.css" type="text/css">
+    <script async defer data-domain="thedahlheimers.com" src="https://analytics.phasematter.com/js/plausible.js"></script>
 </head>
 
 <body>
@@ -47,28 +48,23 @@
                             <section class="second">
                                 <span>Will you be attending?</span><br>
                                 <select name="entry.420027344" id="attending" required>
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                    <option value="Omaha">Yes - The Omaha Ceremony/Reception</option>
+                                    <option value="Vegas">Yes - The Vegas Reception</option>
+                                    <option value="Both">Yes - Both!</option>
+                                    <option value="Neither">Not attending either event</option>
                                 </select>
                             </section>
                         </div>
                         
                         
-                        <div id="if-attending" class="line">
-                            <section class="first">
-                                <label for="party-number"># Attending:</label><br>
-                                <input type="number" name="entry.1246041859" id="party-number" placeholder="1" required><br>
-                            </section>
-
-                            <section class="second">
-                                <label for="party-list">Their Names:</label><br>
+                        <section id="if-attending">
+                                <label for="party-list">Who's coming with you?</label><br>
                                 <textarea name="entry.2096589025" id="party-list" cols="30" rows="3" placeholder="First Last, First Last, First Last" required></textarea>
-                            </section>
-                        </div>
+                        </section>
                       
 
                         <section>
-                            <label for="diet-restrictions">Dietary Restrictions?</label><br>
+                            <label for="diet-restrictions">Any dietary restrictions?</label><br>
                             <textarea name="entry.2016472176" id="diet-restrictions" cols="30" rows="5" placeholder="ie; allergies, vegetarian, vegan..."></textarea>
                         </section>
 

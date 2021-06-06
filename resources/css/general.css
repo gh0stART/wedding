@@ -115,11 +115,11 @@ nav a {
 }
 
 nav a:hover {
-    color:rgba(196, 104, 48, 1);
+    color:rgba(156, 78, 0, 1);
 }
 
 #active {
-    border-bottom: 2px solid rgba(196, 104, 48, 1);
+    border-bottom: 2px solid rgba(156, 78, 0, 1);
 }
 
 #left-nav,
@@ -164,7 +164,7 @@ main section {
     font-weight: 200;
     font-size: 2rem;
     text-transform: capitalize;
-    color: rgba(196, 104, 48, 1);
+    color: rgba(156, 78, 0, 1);
     border-radius: 0.65rem;
 }
 
@@ -220,7 +220,7 @@ footer {
 }
 
 #credit a {
-    color: rgba(196, 104, 48, 1);
+    color: rgba(156, 78, 0, 1);
     text-decoration: none;
 }
 

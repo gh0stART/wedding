@@ -48,7 +48,7 @@ input, select, textarea, button {
 
 button {
     color: rgba(213, 211, 210, 1);
-    background-color: rgba(196, 104, 48, 1);
+    background-color: rgba(156, 78, 0, 1);
     border: none;
     border-radius: 1rem;
     padding: 0.5rem;
@@ -58,7 +58,7 @@ button {
 
 button:hover {
     color: white;
-    background-color: rgba(196, 104, 48, 0.5);
+    background-color: rgba(156, 78, 0, 0.5);
 }
 
 @media only screen and (orientation: portrait) {
@@ -72,5 +72,13 @@ button:hover {
 
     .first, .second {
         padding: 0;
+    }
+
+    form, textarea, select, input, button {
+        font-size: 2rem;
+    }
+
+    option {
+        font-size: 1rem;
     }
 }
